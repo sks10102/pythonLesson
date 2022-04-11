@@ -16,6 +16,7 @@ for k,v in price.items():
 del price['ring']
 
 print(price)
+print(price)
 
 print(price.keys())
 print(price.values())
