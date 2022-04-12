@@ -26,3 +26,6 @@ price['mouse']='5천원'
 print(type(p))
 print(p)
 print(price)
+
+for item in price.keys():
+    print(item)
