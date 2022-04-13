@@ -75,7 +75,30 @@ for i in range(20,True,-2):
     if 2<i<8:
         continue    
     print("*"*i)
-print(list(range(1,100,2)))
-print(tuple(range(1,100,2)))
+print(list(range(1,10,2)))
+print(tuple(range(1,10,2)))
+print(tuple(range(1,10,2)))
 
-print(tuple(range(1,100,2)))
+lst=list(range(1,8))
+print(lst)
+lst2=[i**2 for i in lst]
+print("lst2",lst2)
+
+
+#리스트 함수 짬뽕
+def getBiggerThan20(i):
+    return i>20
+print("lst2_filtered", list(filter(getBiggerThan20,lst2)))
+
+test=["apple","banana","orange"]
+print([len(test) for i in test])
+
+
+#대소문자 변경
+d={100:"apple",200:"banana",300:"orange"}
+print([v.upper() for v in d.values()])
+
+#리스트컴프리헨션
+lst = list(range(1,11))
+result = [i**2 for i in lst if i>5]
+print(result)
